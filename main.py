@@ -47,6 +47,7 @@ def main(argv=None) -> int:
     with open(args.output, "w", encoding="utf-8", newline="\n") as f:
         f.write(LINE)
     print(LINE)
+    print(f"({len(LINE)} characters, 1 line)", file=sys.stderr)
     return 0
 
 
